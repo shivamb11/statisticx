@@ -11,7 +11,13 @@ if (process.env.NODE_ENV !== "production") {
   dotenv.config();
 }
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://statisticx-client.vercel.app",
+    credentials: true,
+    methods: ["GET", "OPTIONS"],
+  })
+);
 
 const username = process.env.api_username;
 const key = process.env.api_key;
