@@ -13,8 +13,7 @@ if (process.env.NODE_ENV !== "production") {
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    // origin: "https://statisticx-client.vercel.app",
+    origin: "https://statisticx-client.vercel.app",
     credentials: true,
     methods: ["GET", "OPTIONS"],
   })
