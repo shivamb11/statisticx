@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100dvh;
+  background-color: rgb(250, 250, 255);
+  font-family: "Ubuntu Sans", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}

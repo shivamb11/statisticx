@@ -1,0 +1,13 @@
+.navbar {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+
+  .logo {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
