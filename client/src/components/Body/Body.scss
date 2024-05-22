@@ -26,6 +26,7 @@
 
       .sub-row {
         display: flex;
+        max-width: 100%;
 
         h3 {
           display: flex;
@@ -33,6 +34,10 @@
           justify-content: center;
           margin-right: 10px;
           color: #3789fe;
+        }
+
+        @media only screen and (max-width: 590px) {
+          flex-wrap: wrap;
         }
       }
     }

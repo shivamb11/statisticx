@@ -14,7 +14,7 @@ import { AggregatedTableDataType } from "../AggregatedTable/AggregatedData.types
 import ErrorComponent from "../ErrorComponent/ErrorComponent";
 
 async function getData(): Promise<apiDataType[]> {
-  const res = await axios.get("https://statisticx-api.vercel.app/api/data");
+  const res = await axios.get("http://localhost:5000/api/data");
   return res.data;
 }
 
