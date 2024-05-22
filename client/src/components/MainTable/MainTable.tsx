@@ -31,13 +31,6 @@ const columns: TableColumnsType<MainTableDataType> = [
   },
 ];
 
-const onChange: TableProps<MainTableDataType>["onChange"] = (
-  pagination,
-  filters,
-  sorter,
-  extra
-) => {};
-
 const MainTable = ({
   data,
   selectedRowKeys,
@@ -47,7 +40,7 @@ const MainTable = ({
   selectedRowKeys: React.Key[];
   setSelectedRowKeys: React.Dispatch<React.SetStateAction<React.Key[]>>;
 }) => {
-  const [selectionType, setSelectionType] = useState<"radio">("radio");
+  const [selectionType] = useState<"radio">("radio");
 
   const onSelectChange = (newSelectedRowKeys: React.Key[]) => {
     setSelectedRowKeys(newSelectedRowKeys);
@@ -75,7 +68,6 @@ const MainTable = ({
         rowSelection={rowSelection}
         columns={columns}
         dataSource={data}
-        // onChange={onChange}
         onRow={(record) => ({
           onClick: () => {
             selectRow(record);
